@@ -136,11 +136,18 @@ export default function IndexPage() {
       </div>
       <div className='overflow-hidden'>
         <div id="home" className="relative h-screen overflow-hidden px-6 md:px-16">
-          <div className="relative z-10 flex flex-col justify-center h-full text-left">
-            <p className="text-white text-sm sm:text-lg mb-3 poppins-500 flex">
-              <span className='text-4xl md:text-5xl'>Hello</span>
-              <span><img style={{ marginLeft:"10px"}} className='img-fluid my-auto mt-1 w-8 h-8 md:w-10 md:h-10' alt='welcome' src={welcomehand} /></span>   
-            </p>
+          <div className="relative z-10 flex flex-col justify-center h-full text-left ">
+            <span className="text-white text-sm sm:text-lg mb-3 poppins-500 flex w-fit">
+              <span className='write-text flex items-center'>
+                <span className='text-4xl md:text-5xl'>Hello</span>
+                <img
+                  style={{ marginLeft: "10px" }}
+                  className='img-fluid my-auto mt-1 w-8 h-8 md:w-10 md:h-10'
+                  alt='welcome'
+                  src={welcomehand}
+                />
+              </span>
+            </span>
             <h1 className='mb-2 text-[#ab92af] text-base font-semibold'>MY NAME IS </h1>
             <h1 className="text-white text-5xl lg:text-9xl mb-12 poppins-500 text-wrap">David <span className='text-[#ab92af]'>Nwokeabia</span></h1>
             <div >

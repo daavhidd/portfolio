@@ -28,22 +28,6 @@ html {
   box-sizing: border-box;
 }
 
-.dancing-script-600 {
-  font-family: 'Dancing Script', 'Brush Script MT', 'Comic Sans MS', cursive;
-  font-optical-sizing: auto;
-  font-weight: 600 !important;
-  font-style: normal;
-}
-
-.glass-bg {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
 .glass {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
@@ -363,6 +347,41 @@ html {
   font-weight: 500 !important;
   font-style: normal;
 }
+
+.write-text {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center; 
+  border-right: 2px solid white; 
+  animation: typing 4.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0; 
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; 
+  }
+  50% {
+    border-color: white; 
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
