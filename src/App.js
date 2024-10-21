@@ -1,15 +1,21 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Portfolio from './Pages/Portfolio'
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import IndexPage from './pages/IndexPage';
+import Error from './components/error';
 
-export default function App() {
+
+function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Portfolio />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
-      </Routes>
-    </BrowserRouter>
-  )
+    <Router>
+        <Routes>
+          <Route exact path="/" element={<IndexPage />} />
+          <Route  path="*" element={<Error />} />
+        </Routes>
+    </Router>
+  );
 }
+
+export default App;
+
+
